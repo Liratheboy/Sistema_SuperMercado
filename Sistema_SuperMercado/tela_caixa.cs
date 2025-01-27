@@ -19,7 +19,7 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
-        private List<Produto> getProdutos()
+        private List<Produto> getListaProdutos()
         {
             List<Produto> listaProduto = new List<Produto>();
 
@@ -29,6 +29,18 @@ namespace Sistema_SuperMercado
             listaProduto.Add(new Produto("seila", "540172947", 10));
 
             return listaProduto;
+        }
+
+        private Produto getProduto(string codigoProduto) 
+        {
+            List<Produto> listaProdutos = getListaProdutos();
+            int i = 0;
+
+            while (listaProdutos[i].codigo != codigoProduto) { i++; }
+
+            Produto produto = listaProdutos[i];
+
+            return produto;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -43,7 +55,7 @@ namespace Sistema_SuperMercado
 
         private void tela_caixa_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = getProdutos();
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
