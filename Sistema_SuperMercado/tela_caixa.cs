@@ -43,6 +43,13 @@ namespace Sistema_SuperMercado
             return produto;
         }
 
+        private DataTable criarTabela() 
+        {
+            DataTable dt = new DataTable();
+
+            return dt;
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -55,7 +62,14 @@ namespace Sistema_SuperMercado
 
         private void tela_caixa_Load(object sender, EventArgs e)
         {
-            
+            DataTable dt = criarTabela();
+
+            dt.Columns.Add("Name");
+            dt.Columns.Add("Age");
+            dt.Columns.Add("lol");
+
+            dataGridView1.DataSource = dt;
+
         }
 
         private void label6_Click(object sender, EventArgs e)
