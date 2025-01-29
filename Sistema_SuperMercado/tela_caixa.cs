@@ -14,12 +14,14 @@ namespace Sistema_SuperMercado
 {
     public partial class tela_caixa : Form
     {
+        private DataTable dt = new DataTable();
+
         public tela_caixa()
         {
             InitializeComponent();
         }
 
-        private List<Produto> getListaProdutos()
+        private List<Produto> getListaTodosProdutos()
         {
             List<Produto> listaProduto = new List<Produto>();
 
@@ -31,9 +33,9 @@ namespace Sistema_SuperMercado
             return listaProduto;
         }
 
-        private Produto getProduto(string codigoProduto) 
+        private Produto getProduto(string codigoProduto)
         {
-            List<Produto> listaProdutos = getListaProdutos();
+            List<Produto> listaProdutos = getListaTodosProdutos();
             int i = 0;
 
             while (listaProdutos[i].codigo != codigoProduto) { i++; }
@@ -41,13 +43,6 @@ namespace Sistema_SuperMercado
             Produto produto = listaProdutos[i];
 
             return produto;
-        }
-
-        private DataTable criarTabela() 
-        {
-            DataTable dt = new DataTable();
-
-            return dt;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -62,19 +57,30 @@ namespace Sistema_SuperMercado
 
         private void tela_caixa_Load(object sender, EventArgs e)
         {
-            DataTable dt = criarTabela();
+            dt.Columns.Add("Produto");
+            dt.Columns.Add("Valor");
+            dt.Columns.Add("Quantidade");
+            dt.Columns.Add("Valor Total");
 
-            dt.Columns.Add("Name");
-            dt.Columns.Add("Age");
-            dt.Columns.Add("lol");
-
-            dataGridView1.DataSource = dt;
-
+            dataGridView.DataSource = dt;
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInserirProdutoGrid_Click(object sender, EventArgs e)
+        {
+            List<Produto> listaProdutosGrid = new List<Produto>();
+
+            string codigo = txtInserirCodigoProduto.Text;
+            string quantidade = txtInserirQuantidadeProduto.Text;
+            
+            Produto produto = getProduto(codigo);
+
+            listaProdutosGrid.Add(produto);
+            
         }
     }
 }
