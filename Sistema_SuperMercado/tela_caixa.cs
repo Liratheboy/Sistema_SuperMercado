@@ -58,7 +58,7 @@ namespace Sistema_SuperMercado
         private void tela_caixa_Load(object sender, EventArgs e)
         {
             dt.Columns.Add("Produto");
-            dt.Columns.Add("Valor");
+            dt.Columns.Add("Valor Unidade");
             dt.Columns.Add("Quantidade");
             dt.Columns.Add("Valor Total");
 
@@ -67,7 +67,7 @@ namespace Sistema_SuperMercado
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnInserirProdutoGrid_Click(object sender, EventArgs e)
@@ -75,12 +75,15 @@ namespace Sistema_SuperMercado
             List<Produto> listaProdutosGrid = new List<Produto>();
 
             string codigo = txtInserirCodigoProduto.Text;
-            string quantidade = txtInserirQuantidadeProduto.Text;
-            
+            string quantidadeTxt = txtInserirQuantidadeProduto.Text;
+            double quantidade = double.Parse(quantidadeTxt);
+
             Produto produto = getProduto(codigo);
 
             listaProdutosGrid.Add(produto);
-            
+
+            dt.Rows.Add(produto.descricao, produto.valorUnitario, quantidade, (produto.valorUnitario) * quantidade);
+
         }
     }
 }
