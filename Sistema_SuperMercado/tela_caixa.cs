@@ -15,7 +15,7 @@ namespace Sistema_SuperMercado
     public partial class tela_caixa : Form
     {
         private DataTable dt = new DataTable();
-
+        double valorTotal = 0;
         public tela_caixa()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace Sistema_SuperMercado
             List<Produto> listaProduto = new List<Produto>();
 
             listaProduto.Add(new Produto("Coca", "921839283", 7));
-            listaProduto.Add(new Produto("Pepsi", "739571837", 6));
+            listaProduto.Add(new Produto("Pepsi", "711365278", 6));
             listaProduto.Add(new Produto("Leite", "375417485", 4));
             listaProduto.Add(new Produto("seila", "540172947", 10));
 
@@ -67,7 +67,7 @@ namespace Sistema_SuperMercado
 
         private void label6_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnInserirProdutoGrid_Click(object sender, EventArgs e)
@@ -80,9 +80,33 @@ namespace Sistema_SuperMercado
 
             Produto produto = getProduto(codigo);
 
+            double valor = produto.valorUnitario * quantidade;
+
+            valorTotal = +valor;
+
             listaProdutosGrid.Add(produto);
 
             dt.Rows.Add(produto.descricao, produto.valorUnitario, quantidade, (produto.valorUnitario) * quantidade);
+
+            lblValorUnitarioItem.Text = produto.valorUnitario.ToString();
+            lblValorTotaldoItem.Text = (produto.valorUnitario * quantidade).ToString();
+
+            lblValorSubtotalCompra.Text = valorTotal.ToString();
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtInserirCodigoProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

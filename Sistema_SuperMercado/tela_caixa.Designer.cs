@@ -34,18 +34,20 @@
             label3 = new Label();
             panel1 = new Panel();
             dataGridView = new DataGridView();
-            label4 = new Label();
-            label5 = new Label();
+            lblValorUnitarioItem = new Label();
+            lblValorTotaldoItem = new Label();
             label6 = new Label();
             txtInserirQuantidadeProduto = new TextBox();
             btnInserirProdutoGrid = new Button();
+            label4 = new Label();
+            lblValorSubtotalCompra = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(7, 298);
+            label1.Location = new Point(21, 57);
             label1.Name = "label1";
             label1.Size = new Size(153, 15);
             label1.TabIndex = 0;
@@ -54,32 +56,34 @@
             // 
             // txtInserirCodigoProduto
             // 
-            txtInserirCodigoProduto.Location = new Point(166, 295);
+            txtInserirCodigoProduto.Location = new Point(180, 54);
             txtInserirCodigoProduto.Name = "txtInserirCodigoProduto";
             txtInserirCodigoProduto.Size = new Size(153, 23);
             txtInserirCodigoProduto.TabIndex = 1;
+            txtInserirCodigoProduto.TextChanged += txtInserirCodigoProduto_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(65, 93);
+            label2.Location = new Point(21, 243);
             label2.Name = "label2";
-            label2.Size = new Size(81, 15);
+            label2.Size = new Size(125, 15);
             label2.TabIndex = 2;
-            label2.Text = "Valor Unitário:";
+            label2.Text = "Valor Unitário (Em R$):";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(65, 182);
+            label3.Location = new Point(21, 288);
             label3.Name = "label3";
-            label3.Size = new Size(80, 15);
+            label3.Size = new Size(124, 15);
             label3.TabIndex = 4;
-            label3.Text = "Total do item:";
+            label3.Text = "Total do item (Em R$):";
+            label3.Click += label3_Click;
             // 
             // panel1
             // 
-            panel1.Location = new Point(338, 52);
+            panel1.Location = new Point(348, 14);
             panel1.Name = "panel1";
             panel1.Size = new Size(652, 179);
             panel1.TabIndex = 7;
@@ -92,34 +96,33 @@
             dataGridView.AllowUserToResizeRows = false;
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView.Location = new Point(338, 76);
+            dataGridView.Location = new Point(348, 38);
             dataGridView.Name = "dataGridView";
             dataGridView.Size = new Size(652, 372);
             dataGridView.TabIndex = 8;
             dataGridView.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // label4
+            // lblValorUnitarioItem
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(151, 94);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 9;
-            label4.Text = "valor*";
+            lblValorUnitarioItem.AutoSize = true;
+            lblValorUnitarioItem.Location = new Point(157, 243);
+            lblValorUnitarioItem.Name = "lblValorUnitarioItem";
+            lblValorUnitarioItem.Size = new Size(0, 15);
+            lblValorUnitarioItem.TabIndex = 9;
+            lblValorUnitarioItem.Click += label4_Click;
             // 
-            // label5
+            // lblValorTotaldoItem
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(149, 182);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 15);
-            label5.TabIndex = 10;
-            label5.Text = "valor*";
+            lblValorTotaldoItem.AutoSize = true;
+            lblValorTotaldoItem.Location = new Point(151, 288);
+            lblValorTotaldoItem.Name = "lblValorTotaldoItem";
+            lblValorTotaldoItem.Size = new Size(0, 15);
+            lblValorTotaldoItem.TabIndex = 10;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(50, 337);
+            label6.Location = new Point(64, 96);
             label6.Name = "label6";
             label6.Size = new Size(112, 15);
             label6.TabIndex = 11;
@@ -128,14 +131,14 @@
             // 
             // txtInserirQuantidadeProduto
             // 
-            txtInserirQuantidadeProduto.Location = new Point(166, 334);
+            txtInserirQuantidadeProduto.Location = new Point(180, 93);
             txtInserirQuantidadeProduto.Name = "txtInserirQuantidadeProduto";
             txtInserirQuantidadeProduto.Size = new Size(100, 23);
             txtInserirQuantidadeProduto.TabIndex = 12;
             // 
             // btnInserirProdutoGrid
             // 
-            btnInserirProdutoGrid.Location = new Point(80, 374);
+            btnInserirProdutoGrid.Location = new Point(94, 133);
             btnInserirProdutoGrid.Name = "btnInserirProdutoGrid";
             btnInserirProdutoGrid.Size = new Size(154, 24);
             btnInserirProdutoGrid.TabIndex = 13;
@@ -143,16 +146,37 @@
             btnInserirProdutoGrid.UseVisualStyleBackColor = true;
             btnInserirProdutoGrid.Click += btnInserirProdutoGrid_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 15F);
+            label4.Location = new Point(21, 382);
+            label4.Name = "label4";
+            label4.Size = new Size(163, 28);
+            label4.TabIndex = 14;
+            label4.Text = "Subtotal (Em R$):";
+            // 
+            // lblValorSubtotalCompra
+            // 
+            lblValorSubtotalCompra.AutoSize = true;
+            lblValorSubtotalCompra.Font = new Font("Segoe UI", 15F);
+            lblValorSubtotalCompra.Location = new Point(183, 382);
+            lblValorSubtotalCompra.Name = "lblValorSubtotalCompra";
+            lblValorSubtotalCompra.Size = new Size(0, 28);
+            lblValorSubtotalCompra.TabIndex = 15;
+            // 
             // tela_caixa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1037, 545);
+            Controls.Add(lblValorSubtotalCompra);
+            Controls.Add(label4);
             Controls.Add(btnInserirProdutoGrid);
             Controls.Add(txtInserirQuantidadeProduto);
             Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
+            Controls.Add(lblValorTotaldoItem);
+            Controls.Add(lblValorUnitarioItem);
             Controls.Add(dataGridView);
             Controls.Add(panel1);
             Controls.Add(label3);
@@ -175,10 +199,12 @@
         private Label label3;
         private Panel panel1;
         private DataGridView dataGridView;
-        private Label label4;
-        private Label label5;
+        private Label lblValorUnitarioItem;
+        private Label lblValorTotaldoItem;
         private Label label6;
         private TextBox txtInserirQuantidadeProduto;
         private Button btnInserirProdutoGrid;
+        private Label label4;
+        private Label lblValorSubtotalCompra;
     }
 }
