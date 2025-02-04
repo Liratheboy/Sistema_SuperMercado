@@ -28,7 +28,27 @@ namespace Sistema_SuperMercado
             listaProduto.Add(new Produto("Coca", "921839283", 7));
             listaProduto.Add(new Produto("Pepsi", "711365278", 6));
             listaProduto.Add(new Produto("Leite", "375417485", 4));
-            listaProduto.Add(new Produto("seila", "540172947", 10));
+            listaProduto.Add(new Produto("Mortadela", "540172947", 10));
+            listaProduto.Add(new Produto("Arroz", "482193745", 12));
+            listaProduto.Add(new Produto("Feijao", "937284610", 5));
+            listaProduto.Add(new Produto("Macarrao", "561029384", 18));
+            listaProduto.Add(new Produto("Acucar", "710293845", 7));
+            listaProduto.Add(new Produto("Sal", "384756102", 3));
+            listaProduto.Add(new Produto("Cafe", "928374510", 15));
+            listaProduto.Add(new Produto("Leite", "675201948", 9));
+            listaProduto.Add(new Produto("Oleo", "183746592", 20));
+            listaProduto.Add(new Produto("Farinha", "294857103", 4));
+            listaProduto.Add(new Produto("Carne", "839271405", 11));
+            listaProduto.Add(new Produto("Frango", "120948375", 6));
+            listaProduto.Add(new Produto("Queijo", "657120938", 14));
+            listaProduto.Add(new Produto("Presunto", "984375210", 2));
+            listaProduto.Add(new Produto("Ovo", "473829105", 8));
+            listaProduto.Add(new Produto("Manteiga", "102938475", 19));
+            listaProduto.Add(new Produto("Sabao", "827364910", 10));
+            listaProduto.Add(new Produto("Detergente", "394857201", 5));
+            listaProduto.Add(new Produto("Creme", "210394857", 13));
+            listaProduto.Add(new Produto("Shampoo", "983210475", 1));
+            listaProduto.Add(new Produto("Papel", "746382910", 17));
 
             return listaProduto;
         }
@@ -82,7 +102,7 @@ namespace Sistema_SuperMercado
 
             double valor = produto.valorUnitario * quantidade;
 
-            valorTotal = +valor;
+            valorTotal += valor;
 
             listaProdutosGrid.Add(produto);
 
