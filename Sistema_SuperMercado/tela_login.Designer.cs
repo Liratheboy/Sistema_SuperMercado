@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             lblLogin = new Label();
             txtUserLogin = new TextBox();
             txtSenhaLogin = new TextBox();
-            label1 = new Label();
             label2 = new Label();
+            btnAcessarSistema = new Button();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(278, 311);
-            button1.Name = "button1";
-            button1.Size = new Size(242, 52);
-            button1.TabIndex = 0;
-            button1.Text = "Acessar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // lblLogin
             // 
@@ -71,15 +61,6 @@
             txtSenhaLogin.Size = new Size(136, 23);
             txtSenhaLogin.TabIndex = 3;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(298, 194);
-            label1.Name = "label1";
-            label1.Size = new Size(33, 15);
-            label1.TabIndex = 4;
-            label1.Text = "User:";
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -89,17 +70,36 @@
             label2.TabIndex = 5;
             label2.Text = "Senha:";
             // 
+            // btnAcessarSistema
+            // 
+            btnAcessarSistema.Location = new Point(298, 285);
+            btnAcessarSistema.Name = "btnAcessarSistema";
+            btnAcessarSistema.Size = new Size(195, 47);
+            btnAcessarSistema.TabIndex = 6;
+            btnAcessarSistema.Text = "Acessar";
+            btnAcessarSistema.UseVisualStyleBackColor = true;
+            btnAcessarSistema.Click += btnAcessarSistema_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(298, 194);
+            label1.Name = "label1";
+            label1.Size = new Size(33, 15);
+            label1.TabIndex = 7;
+            label1.Text = "User:";
+            // 
             // tela_login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(btnAcessarSistema);
+            Controls.Add(label2);
             Controls.Add(txtSenhaLogin);
             Controls.Add(txtUserLogin);
             Controls.Add(lblLogin);
-            Controls.Add(button1);
             Name = "tela_login";
             Text = "Form1";
             ResumeLayout(false);
@@ -107,12 +107,11 @@
         }
 
         #endregion
-
-        private Button button1;
         private Label lblLogin;
         private TextBox txtUserLogin;
         private TextBox txtSenhaLogin;
-        private Label label1;
         private Label label2;
+        private Button btnAcessarSistema;
+        private Label label1;
     }
 }

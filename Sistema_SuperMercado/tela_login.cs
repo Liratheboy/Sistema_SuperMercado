@@ -9,15 +9,43 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
-        private List<String> 
+        private List<Funcionario> getFuncionarios()
+        {
+            List<Funcionario> listaFuncionarios = new List<Funcionario>();
+
+            listaFuncionarios.Add(new Funcionario("lucas", "748392105", "30458271963"));
+            listaFuncionarios.Add(new Funcionario("fernanda", "521087436", "72914560827"));
+            listaFuncionarios.Add(new Funcionario("rafael", "936204871", "61827430519"));
+            listaFuncionarios.Add(new Funcionario("camila", "102584739", "50793621485"));
+            listaFuncionarios.Add(new Funcionario("bruno", "374920156", "82514730962"));
+
+            return listaFuncionarios;
+        }
+
+        private Funcionario findFuncionario(string senha)
+        {
+            List<Funcionario> lista = getFuncionarios();
+
+            int i = 0;
+
+            while (lista[i].senhaFuncionario != senha) { i++; }
+
+            return lista[i];
+
+        }
 
         public void abrirJanela(object obj)
         {
             Application.Run(new tela_principal_funcionario_caixa());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAcessarSistema_Click(object sender, EventArgs e)
         {
+            string nome = txtUserLogin.Text;
+            string senha = txtSenhaLogin.Text;
+            
+        
+
             this.Close();
             t1 = new Thread(abrirJanela);
             t1.SetApartmentState(ApartmentState.STA);
