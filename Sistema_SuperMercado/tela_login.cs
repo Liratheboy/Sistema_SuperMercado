@@ -9,6 +9,8 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
+        private List<String> 
+
         public void abrirJanela(object obj)
         {
             Application.Run(new tela_principal_funcionario_caixa());
