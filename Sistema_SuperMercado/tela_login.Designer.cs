@@ -30,8 +30,8 @@
         {
             button1 = new Button();
             lblLogin = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUserLogin = new TextBox();
+            txtSenhaLogin = new TextBox();
             label1 = new Label();
             label2 = new Label();
             SuspendLayout();
@@ -57,19 +57,19 @@
             lblLogin.Text = "Login";
             lblLogin.Click += label1_Click;
             // 
-            // textBox1
+            // txtUserLogin
             // 
-            textBox1.Location = new Point(357, 191);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(136, 23);
-            textBox1.TabIndex = 2;
+            txtUserLogin.Location = new Point(357, 191);
+            txtUserLogin.Name = "txtUserLogin";
+            txtUserLogin.Size = new Size(136, 23);
+            txtUserLogin.TabIndex = 2;
             // 
-            // textBox2
+            // txtSenhaLogin
             // 
-            textBox2.Location = new Point(357, 232);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(136, 23);
-            textBox2.TabIndex = 3;
+            txtSenhaLogin.Location = new Point(357, 232);
+            txtSenhaLogin.Name = "txtSenhaLogin";
+            txtSenhaLogin.Size = new Size(136, 23);
+            txtSenhaLogin.TabIndex = 3;
             // 
             // label1
             // 
@@ -96,8 +96,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtSenhaLogin);
+            Controls.Add(txtUserLogin);
             Controls.Add(lblLogin);
             Controls.Add(button1);
             Name = "tela_login";
@@ -110,8 +110,8 @@
 
         private Button button1;
         private Label lblLogin;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUserLogin;
+        private TextBox txtSenhaLogin;
         private Label label1;
         private Label label2;
     }
