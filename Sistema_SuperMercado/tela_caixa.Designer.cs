@@ -41,8 +41,8 @@
             btnInserirProdutoGrid = new Button();
             label4 = new Label();
             lblValorSubtotalCompra = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnTelaRemoverItem = new Button();
+            btnTelaPagamento = new Button();
             button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
@@ -168,24 +168,24 @@
             lblValorSubtotalCompra.Size = new Size(0, 37);
             lblValorSubtotalCompra.TabIndex = 15;
             // 
-            // button1
+            // btnTelaRemoverItem
             // 
-            button1.Location = new Point(88, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(138, 40);
-            button1.TabIndex = 16;
-            button1.Text = "Remover Item";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnTelaRemoverItem.Location = new Point(88, 336);
+            btnTelaRemoverItem.Name = "btnTelaRemoverItem";
+            btnTelaRemoverItem.Size = new Size(138, 40);
+            btnTelaRemoverItem.TabIndex = 16;
+            btnTelaRemoverItem.Text = "Remover Item";
+            btnTelaRemoverItem.UseVisualStyleBackColor = true;
+            btnTelaRemoverItem.Click += button1_Click;
             // 
-            // button2
+            // btnTelaPagamento
             // 
-            button2.Location = new Point(878, 467);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 40);
-            button2.TabIndex = 17;
-            button2.Text = "Pagamento";
-            button2.UseVisualStyleBackColor = true;
+            btnTelaPagamento.Location = new Point(878, 467);
+            btnTelaPagamento.Name = "btnTelaPagamento";
+            btnTelaPagamento.Size = new Size(122, 40);
+            btnTelaPagamento.TabIndex = 17;
+            btnTelaPagamento.Text = "Pagamento";
+            btnTelaPagamento.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -202,8 +202,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1037, 545);
             Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnTelaPagamento);
+            Controls.Add(btnTelaRemoverItem);
             Controls.Add(lblValorSubtotalCompra);
             Controls.Add(label4);
             Controls.Add(btnInserirProdutoGrid);
@@ -240,8 +240,8 @@
         private Button btnInserirProdutoGrid;
         private Label label4;
         private Label lblValorSubtotalCompra;
-        private Button button1;
-        private Button button2;
+        private Button btnTelaRemoverItem;
+        private Button btnTelaPagamento;
         private Button button3;
     }
 }

@@ -18,6 +18,7 @@ namespace Sistema_SuperMercado
             listaFuncionarios.Add(new Funcionario("rafael", "936204871", "61827430519"));
             listaFuncionarios.Add(new Funcionario("camila", "102584739", "50793621485"));
             listaFuncionarios.Add(new Funcionario("bruno", "374920156", "82514730962"));
+            listaFuncionarios.Add(new Funcionario("a", "a", "65534730164"));
 
             return listaFuncionarios;
         }
@@ -30,9 +31,16 @@ namespace Sistema_SuperMercado
 
             Funcionario funcionario = null;
 
-            while (lista[i].senhaFuncionario != senha && lista[i].nomeFuncionario != user) { i++; }
+            try { 
 
-            funcionario = lista[i];
+                while (lista[i].senhaFuncionario != senha && lista[i].nomeFuncionario != user) { i++; }
+
+                funcionario = lista[i];
+
+            } catch(ArgumentOutOfRangeException e)
+            {
+                
+            }
 
             return funcionario;
 
@@ -50,10 +58,11 @@ namespace Sistema_SuperMercado
 
             Funcionario funcionario = findFuncionario(senha, nome);
 
-            if (funcionario == null) MessageBox.Show("Erro! User ou Senha incorretos.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
+            if (funcionario == null)
+            { MessageBox.Show("Erro! User ou Senha incorretos.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             else
-            { 
+            {
                 this.Close();
                 t1 = new Thread(abrirJanela);
                 t1.SetApartmentState(ApartmentState.STA);
