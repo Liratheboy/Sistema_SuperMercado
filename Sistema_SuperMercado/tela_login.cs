@@ -22,15 +22,19 @@ namespace Sistema_SuperMercado
             return listaFuncionarios;
         }
 
-        private Funcionario findFuncionario(string senha)
+        private Funcionario findFuncionario(string senha, string user)
         {
             List<Funcionario> lista = getFuncionarios();
 
             int i = 0;
 
-            while (lista[i].senhaFuncionario != senha) { i++; }
+            Funcionario funcionario = null;
 
-            return lista[i];
+            while (lista[i].senhaFuncionario != senha && lista[i].nomeFuncionario != user) { i++; }
+
+            funcionario = lista[i];
+
+            return funcionario;
 
         }
 
@@ -43,13 +47,18 @@ namespace Sistema_SuperMercado
         {
             string nome = txtUserLogin.Text;
             string senha = txtSenhaLogin.Text;
-            
-        
 
-            this.Close();
-            t1 = new Thread(abrirJanela);
-            t1.SetApartmentState(ApartmentState.STA);
-            t1.Start();
+            Funcionario funcionario = findFuncionario(senha, nome);
+
+            if (funcionario == null) MessageBox.Show("Erro! User ou Senha incorretos.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
+            else
+            { 
+                this.Close();
+                t1 = new Thread(abrirJanela);
+                t1.SetApartmentState(ApartmentState.STA);
+                t1.Start();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
