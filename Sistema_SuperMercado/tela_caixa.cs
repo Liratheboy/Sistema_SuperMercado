@@ -12,13 +12,18 @@ using System.Windows.Forms;
 
 namespace Sistema_SuperMercado
 {
-    public partial class tela_caixa : Form
+    public partial class tela_caixa : Form, Icriar_janela
     {
         private DataTable dt = new DataTable();
         double valorTotal = 0;
         public tela_caixa()
         {
             InitializeComponent();
+        }
+
+        public void abrirJanela(object obj)
+        {
+            Application.Run(new tela_principal_funcionario_caixa());
         }
 
         private List<Produto> getListaTodosProdutos()
