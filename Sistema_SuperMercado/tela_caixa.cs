@@ -16,6 +16,7 @@ namespace Sistema_SuperMercado
     {
         private DataTable dt = new DataTable();
         double valorTotal = 0;
+        Thread t2;
         public tela_caixa()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace Sistema_SuperMercado
 
         public void abrirJanela(object obj)
         {
-            Application.Run(new tela_principal_funcionario_caixa());
+            Application.Run(new tela_pagamento());
         }
 
         private List<Produto> getListaTodosProdutos()
@@ -92,7 +93,7 @@ namespace Sistema_SuperMercado
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnInserirProdutoGrid_Click(object sender, EventArgs e)
@@ -138,6 +139,12 @@ namespace Sistema_SuperMercado
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTelaPagamento_Click(object sender, EventArgs e)
+        {
+            tela_pagamento tl1 = new tela_pagamento();
+            tl1.Show();
         }
     }
 }
