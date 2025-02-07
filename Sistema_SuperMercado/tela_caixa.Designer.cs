@@ -186,6 +186,7 @@
             btnTelaPagamento.TabIndex = 17;
             btnTelaPagamento.Text = "Pagamento";
             btnTelaPagamento.UseVisualStyleBackColor = true;
+            btnTelaPagamento.Click += btnTelaPagamento_Click;
             // 
             // button3
             // 
