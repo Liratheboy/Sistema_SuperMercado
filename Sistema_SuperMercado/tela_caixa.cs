@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Sistema_SuperMercado
 {
-    public partial class tela_caixa : Form, Icriar_janela
+    public partial class tela_caixa : Form
     {
         private DataTable dt = new DataTable();
         double valorTotal = 0;
@@ -20,11 +20,6 @@ namespace Sistema_SuperMercado
         public tela_caixa()
         {
             InitializeComponent();
-        }
-
-        public void abrirJanela(object obj)
-        {
-            Application.Run(new tela_pagamento());
         }
 
         private List<Produto> getListaTodosProdutos()
@@ -143,7 +138,8 @@ namespace Sistema_SuperMercado
 
         private void btnTelaPagamento_Click(object sender, EventArgs e)
         {
-            tela_pagamento tl1 = new tela_pagamento();
+            double valor = valorTotal;
+            tela_pagamento tl1 = new tela_pagamento(valor);
             tl1.Show();
         }
     }
