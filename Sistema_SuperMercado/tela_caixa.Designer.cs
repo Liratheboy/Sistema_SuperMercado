@@ -43,7 +43,7 @@
             lblValorSubtotalCompra = new Label();
             btnTelaRemoverItem = new Button();
             btnTelaPagamento = new Button();
-            button3 = new Button();
+            btnVoltarTelaPrincipal = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -188,21 +188,22 @@
             btnTelaPagamento.UseVisualStyleBackColor = true;
             btnTelaPagamento.Click += btnTelaPagamento_Click;
             // 
-            // button3
+            // btnVoltarTelaPrincipal
             // 
-            button3.Location = new Point(30, 498);
-            button3.Name = "button3";
-            button3.Size = new Size(114, 35);
-            button3.TabIndex = 18;
-            button3.Text = "Voltar";
-            button3.UseVisualStyleBackColor = true;
+            btnVoltarTelaPrincipal.Location = new Point(30, 498);
+            btnVoltarTelaPrincipal.Name = "btnVoltarTelaPrincipal";
+            btnVoltarTelaPrincipal.Size = new Size(114, 35);
+            btnVoltarTelaPrincipal.TabIndex = 18;
+            btnVoltarTelaPrincipal.Text = "Voltar";
+            btnVoltarTelaPrincipal.UseVisualStyleBackColor = true;
+            btnVoltarTelaPrincipal.Click += btnVoltarTelaPrincipal_Click;
             // 
             // tela_caixa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1037, 545);
-            Controls.Add(button3);
+            Controls.Add(btnVoltarTelaPrincipal);
             Controls.Add(btnTelaPagamento);
             Controls.Add(btnTelaRemoverItem);
             Controls.Add(lblValorSubtotalCompra);
@@ -243,6 +244,6 @@
         private Label lblValorSubtotalCompra;
         private Button btnTelaRemoverItem;
         private Button btnTelaPagamento;
-        private Button button3;
+        private Button btnVoltarTelaPrincipal;
     }
 }

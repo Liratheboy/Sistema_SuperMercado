@@ -32,7 +32,7 @@
             label1 = new Label();
             btnPagCredito = new Button();
             label2 = new Label();
-            label3 = new Label();
+            lblSubtotal = new Label();
             btnPagDebito = new Button();
             btnPagVoucher = new Button();
             btnPagPix = new Button();
@@ -77,15 +77,14 @@
             label2.TabIndex = 3;
             label2.Text = "Subtotal:";
             // 
-            // label3
+            // lblSubtotal
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16F);
-            label3.Location = new Point(275, 289);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 30);
-            label3.TabIndex = 4;
-            label3.Text = "valor*";
+            lblSubtotal.AutoSize = true;
+            lblSubtotal.Font = new Font("Segoe UI", 16F);
+            lblSubtotal.Location = new Point(275, 289);
+            lblSubtotal.Name = "lblSubtotal";
+            lblSubtotal.Size = new Size(0, 30);
+            lblSubtotal.TabIndex = 4;
             // 
             // btnPagDebito
             // 
@@ -122,6 +121,7 @@
             btnPagDinheiro.TabIndex = 8;
             btnPagDinheiro.Text = "Dinheiro";
             btnPagDinheiro.UseVisualStyleBackColor = true;
+            btnPagDinheiro.Click += btnPagDinheiro_Click;
             // 
             // tela_pagamento
             // 
@@ -132,13 +132,14 @@
             Controls.Add(btnPagPix);
             Controls.Add(btnPagVoucher);
             Controls.Add(btnPagDebito);
-            Controls.Add(label3);
+            Controls.Add(lblSubtotal);
             Controls.Add(label2);
             Controls.Add(btnPagCredito);
             Controls.Add(label1);
             Controls.Add(btnCancelarPagamento);
             Name = "tela_pagamento";
             Text = "tela_pagamento";
+            Load += tela_pagamento_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,7 +150,7 @@
         private Label label1;
         private Button btnPagCredito;
         private Label label2;
-        private Label label3;
+        private Label lblSubtotal;
         private Button btnPagDebito;
         private Button btnPagVoucher;
         private Button btnPagPix;
