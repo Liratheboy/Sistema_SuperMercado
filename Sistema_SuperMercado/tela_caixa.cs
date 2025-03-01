@@ -84,8 +84,8 @@ namespace Sistema_SuperMercado
         private void tela_caixa_Load(object sender, EventArgs e)
         {
             dt.Columns.Add("Produto");
-            dt.Columns.Add("Valor Unidade");
             dt.Columns.Add("Quantidade");
+            dt.Columns.Add("Valor Unidade");
             dt.Columns.Add("Valor Total");
 
             dataGridView.DataSource = dt;
