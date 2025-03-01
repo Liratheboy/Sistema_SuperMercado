@@ -21,6 +21,7 @@ namespace Sistema_SuperMercado
             listaUsuarios.Add("Rafael", ("936204871", "61827430519"));
             listaUsuarios.Add("Camila", ("102584739", "50793621485"));
             listaUsuarios.Add("Bruno", ("374920156", "82514730962"));
+            listaUsuarios.Add("a", ("a", "82514730962"));
 
             return listaUsuarios;
         }

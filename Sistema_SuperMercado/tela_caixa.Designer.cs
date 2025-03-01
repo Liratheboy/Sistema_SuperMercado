@@ -101,6 +101,8 @@
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.Location = new Point(348, 38);
             dataGridView.Name = "dataGridView";
+            dataGridView.ReadOnly = true;
+            dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView.Size = new Size(652, 372);
             dataGridView.TabIndex = 8;
             dataGridView.CellContentClick += dataGridView1_CellContentClick;
