@@ -14,7 +14,7 @@ namespace Sistema_SuperMercado
     {
         double valorTotal;
         public tela_pagamento(double valorTotal)
-        {
+        {   
             InitializeComponent();
             this.valorTotal = valorTotal;
         }

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|c:\\users\\joaop\\source\\repos\\sistema_supermercado\\sistema_supermercado\\tela_pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|solutionrelative:sistema_supermercado\\tela_pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3B7499F-4DCD-4105-9506-12C3E813C9B9}|Sistema_SuperMercado\\Sistema_SuperMercado.csproj|C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\sistema_supermercado\\tela_pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,67 +34,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "tela_login.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs",
               "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_login.cs",
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs",
               "RelativeToolTip": "Sistema_SuperMercado\\tela_login.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAowEEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T15:11:41.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "tela_login.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs",
-              "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_login.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs [Projeto]",
-              "RelativeToolTip": "Sistema_SuperMercado\\tela_login.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T15:11:37.704Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "tela_pagamento.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_pagamento.cs",
               "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_pagamento.cs",
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_pagamento.cs",
               "RelativeToolTip": "Sistema_SuperMercado\\tela_pagamento.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T12:10:04.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "tela_caixa.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs",
-              "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_caixa.cs",
-              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs [Projeto]",
-              "RelativeToolTip": "Sistema_SuperMercado\\tela_caixa.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T21:44:45.85Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "tela_caixa.cs",
               "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs",
               "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_caixa.cs",
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs",
               "RelativeToolTip": "Sistema_SuperMercado\\tela_caixa.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T20:04:19.791Z",
               "EditorCaption": ""
@@ -108,8 +84,29 @@
               "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_pagamento.cs [Projeto]",
               "RelativeToolTip": "Sistema_SuperMercado\\tela_pagamento.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:35:08.56Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-02-07T11:35:08.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "tela_login.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs",
+              "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_login.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_login.cs [Projeto]",
+              "RelativeToolTip": "Sistema_SuperMercado\\tela_login.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T15:11:37.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tela_caixa.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs",
+              "RelativeDocumentMoniker": "Sistema_SuperMercado\\tela_caixa.cs",
+              "ToolTip": "C:\\Users\\joaop\\source\\repos\\Sistema_SuperMercado\\Sistema_SuperMercado\\tela_caixa.cs [Projeto]",
+              "RelativeToolTip": "Sistema_SuperMercado\\tela_caixa.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T21:44:45.85Z"
             }
           ]
         }
