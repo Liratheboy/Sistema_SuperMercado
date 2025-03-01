@@ -71,7 +71,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16F);
-            label2.Location = new Point(187, 289);
+            label2.Location = new Point(205, 301);
             label2.Name = "label2";
             label2.Size = new Size(98, 30);
             label2.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             lblSubtotal.AutoSize = true;
             lblSubtotal.Font = new Font("Segoe UI", 16F);
-            lblSubtotal.Location = new Point(275, 289);
+            lblSubtotal.Location = new Point(293, 301);
             lblSubtotal.Name = "lblSubtotal";
             lblSubtotal.Size = new Size(0, 30);
             lblSubtotal.TabIndex = 4;
@@ -115,7 +115,7 @@
             // 
             // btnPagDinheiro
             // 
-            btnPagDinheiro.Location = new Point(187, 219);
+            btnPagDinheiro.Location = new Point(187, 229);
             btnPagDinheiro.Name = "btnPagDinheiro";
             btnPagDinheiro.Size = new Size(175, 33);
             btnPagDinheiro.TabIndex = 8;

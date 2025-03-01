@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Collections;
+
 namespace Sistema_SuperMercado
 {
     public partial class tela_login : Form, Icriar_janela
@@ -9,41 +12,28 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
-        private List<Funcionario> getFuncionarios()
+        private Dictionary<string, (string, string)> getFuncionarios()
         {
-            List<Funcionario> listaFuncionarios = new List<Funcionario>();
+            Dictionary<string, (string senha, string cpf)> listaUsuarios = new Dictionary<string, (string, string)>();
 
-            listaFuncionarios.Add(new Funcionario("lucas", "748392105", "30458271963"));
-            listaFuncionarios.Add(new Funcionario("fernanda", "521087436", "72914560827"));
-            listaFuncionarios.Add(new Funcionario("rafael", "936204871", "61827430519"));
-            listaFuncionarios.Add(new Funcionario("camila", "102584739", "50793621485"));
-            listaFuncionarios.Add(new Funcionario("bruno", "374920156", "82514730962"));
-            listaFuncionarios.Add(new Funcionario("a", "a", "65534730164"));
+            listaUsuarios.Add("Lucas", ("748392105", "30458271963"));
+            listaUsuarios.Add("Fernanda", ("521087436", "72914560827"));
+            listaUsuarios.Add("Rafael", ("936204871", "61827430519"));
+            listaUsuarios.Add("Camila", ("102584739", "50793621485"));
+            listaUsuarios.Add("Bruno", ("374920156", "82514730962"));
 
-            return listaFuncionarios;
+            return listaUsuarios;
         }
 
-        private Funcionario findFuncionario(string senha, string user)
+        private Boolean findFuncionario(string senha, string user)
         {
-            List<Funcionario> lista = getFuncionarios();
+            Dictionary<string, (string senha, string cpf)> listaUsuarios = getFuncionarios();
 
-            int i = 0;
+            Boolean funcionario = false;
 
-            Funcionario funcionario = null;
+            if (listaUsuarios.TryGetValue(user, out var dados) && dados.senha == senha) { return true; }
 
-            try { 
-
-                while (lista[i].senhaFuncionario != senha && lista[i].nomeFuncionario != user) { i++; }
-
-                funcionario = lista[i];
-
-            } catch(ArgumentOutOfRangeException e)
-            {
-                
-            }
-
-            return funcionario;
-
+            else { return false; }
         }
 
         public void abrirJanela(object obj)
@@ -56,9 +46,9 @@ namespace Sistema_SuperMercado
             string nome = txtUserLogin.Text;
             string senha = txtSenhaLogin.Text;
 
-            Funcionario funcionario = findFuncionario(senha, nome);
+            Boolean funcionario = findFuncionario(senha, nome);
 
-            if (funcionario == null)
+            if (funcionario == false)
             { MessageBox.Show("Erro! User ou Senha incorretos.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             else
