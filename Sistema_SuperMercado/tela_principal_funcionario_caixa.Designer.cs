@@ -39,7 +39,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(360, 179);
             label1.Name = "label1";
-            label1.Size = new Size(82, 15);
+            label1.Size = new Size(81, 15);
             label1.TabIndex = 0;
             label1.Text = "Acessar Caixa:";
             // 
@@ -83,6 +83,7 @@
             Controls.Add(label1);
             Name = "tela_principal_funcionario_caixa";
             Text = "tela_principal_funcionario_caixa";
+            Load += tela_principal_funcionario_caixa_Load;
             ResumeLayout(false);
             PerformLayout();
         }

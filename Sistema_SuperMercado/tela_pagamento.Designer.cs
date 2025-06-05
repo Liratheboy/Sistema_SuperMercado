@@ -47,6 +47,7 @@
             btnCancelarPagamento.TabIndex = 0;
             btnCancelarPagamento.Text = "Cancelar";
             btnCancelarPagamento.UseVisualStyleBackColor = true;
+            btnCancelarPagamento.Click += btnCancelarPagamento_Click;
             // 
             // label1
             // 
@@ -66,6 +67,7 @@
             btnPagCredito.TabIndex = 2;
             btnPagCredito.Text = "Crédito";
             btnPagCredito.UseVisualStyleBackColor = true;
+            btnPagCredito.Click += btnPagCredito_Click;
             // 
             // label2
             // 
@@ -94,6 +96,7 @@
             btnPagDebito.TabIndex = 5;
             btnPagDebito.Text = "Debito";
             btnPagDebito.UseVisualStyleBackColor = true;
+            btnPagDebito.Click += btnPagDebito_Click;
             // 
             // btnPagVoucher
             // 
@@ -103,6 +106,7 @@
             btnPagVoucher.TabIndex = 6;
             btnPagVoucher.Text = "Voucher";
             btnPagVoucher.UseVisualStyleBackColor = true;
+            btnPagVoucher.Click += btnPagVoucher_Click;
             // 
             // btnPagPix
             // 
@@ -112,6 +116,7 @@
             btnPagPix.TabIndex = 7;
             btnPagPix.Text = "Pix";
             btnPagPix.UseVisualStyleBackColor = true;
+            btnPagPix.Click += btnPagPix_Click;
             // 
             // btnPagDinheiro
             // 

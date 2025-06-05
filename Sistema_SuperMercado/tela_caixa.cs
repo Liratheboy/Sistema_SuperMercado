@@ -22,9 +22,9 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
-        public void abrirJanela(object obj)
+        public void abrirJanela(Form novaJanela)
         {
-            Application.Run(new tela_principal_funcionario_caixa());
+            Application.Run(novaJanela);
         }
 
         private List<Produto> getListaTodosProdutos()
@@ -151,7 +151,7 @@ namespace Sistema_SuperMercado
         private void btnVoltarTelaPrincipal_Click(object sender, EventArgs e)
         {
             this.Close();
-            t2 = new Thread(abrirJanela);
+            t2 = new Thread(() => abrirJanela(new tela_principal_funcionario_caixa()));
             t2.SetApartmentState(ApartmentState.STA);
             t2.Start();
         }

@@ -37,9 +37,9 @@ namespace Sistema_SuperMercado
             else { return false; }
         }
 
-        public void abrirJanela(object obj)
+        public void abrirJanela(Form novaJanela)
         {
-            Application.Run(new tela_principal_funcionario_caixa());
+            Application.Run(novaJanela);
         }
 
         private void btnAcessarSistema_Click(object sender, EventArgs e)
@@ -55,13 +55,18 @@ namespace Sistema_SuperMercado
             else
             {
                 this.Close();
-                t1 = new Thread(abrirJanela);
+                t1 = new Thread(() => abrirJanela(new tela_principal_funcionario_caixa()));
                 t1.SetApartmentState(ApartmentState.STA);
                 t1.Start();
             }
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tela_login_Load(object sender, EventArgs e)
         {
 
         }
