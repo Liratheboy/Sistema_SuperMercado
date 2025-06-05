@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Sistema_SuperMercado
 {
-    public partial class tela_principal_funcionario_caixa : Form
+    public partial class tela_principal_funcionario_caixa : Form, Icriar_janela
     {
 
         Thread t1;
@@ -20,20 +20,25 @@ namespace Sistema_SuperMercado
             InitializeComponent();
         }
 
-        public void abrirJanela() 
+        public void abrirJanela(Form novaJanela)
         {
-            Application.Run(new tela_caixa());
+            Application.Run(novaJanela);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            t1 = new Thread(abrirJanela);
+            t1 = new Thread(() => abrirJanela(new tela_caixa()));
             t1.SetApartmentState(ApartmentState.STA);
             t1.Start();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tela_principal_funcionario_caixa_Load(object sender, EventArgs e)
         {
 
         }

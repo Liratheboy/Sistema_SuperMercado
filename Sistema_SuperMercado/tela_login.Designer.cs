@@ -102,6 +102,7 @@
             Controls.Add(lblLogin);
             Name = "tela_login";
             Text = "Form1";
+            Load += tela_login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -8,6 +8,6 @@ namespace Sistema_SuperMercado
 {
     interface Icriar_janela
     {
-        public void abrirJanela(object obj);
+        public void abrirJanela(Form novaJanela);
     }
 }

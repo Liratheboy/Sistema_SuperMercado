@@ -18,3 +18,8 @@ C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\
 C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\ref\Sistema_SuperMercado.dll
 C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.sourcelink.json
 C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento.resources
+C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento_credito.resources
+C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento_debito.resources
+C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento_dinheiro.resources
+C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento_pix.resources
+C:\Users\joaop\source\repos\Sistema_SuperMercado\Sistema_SuperMercado\obj\Debug\net8.0-windows\Sistema_SuperMercado.tela_pagamento_voucher.resources
